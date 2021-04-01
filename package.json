@@ -1,0 +1,29 @@
+{
+  "name": "charlesdilip.tech",
+  "version": "0.1.0",
+  "description": "charles dilip's official website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "firebase": "vuepress build src && firebase deploy"
+  },
+  "keywords": [
+    "charles",
+    "dilip",
+    "website",
+    "firebase",
+    "charlesdilip.tech"
+  ],
+  "author": "charlesrajendran",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^0.14.10"
+  },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  },
+  "devDependencies": {
+    "vuepress-plugin-rss": "^2.0.0"
+  }
+}

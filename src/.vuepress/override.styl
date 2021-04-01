@@ -1,0 +1,96 @@
+$secondary = #b34444
+
+.social-links
+    display grid
+    grid-template-columns repeat(5, 1fr)
+
+// Page specific styles
+
+.theme-container.aboutme-profile
+    margin-top: 10vh;
+
+unquote("@media screen and (max-width: 600px ) {")
+.theme-container.aboutme-profile
+    margin-top: auto;
+unquote("}")
+
+
+.theme-container.home-page
+    background url('/images/bg.webp') no-repeat
+    background-size 100vw 350px
+    min-width 100vw
+    min-height calc(100vh - 150px)
+    padding-top 150px
+    overflow hidden
+    
+
+html 
+    overflow-x hidden
+
+// override the styles
+a.sidebar-link {
+    color: gray;
+}
+
+a.sidebar-link:hover {
+    color: #333;
+}
+
+a.sidebar-link.active {
+    color: #333;
+    border-left-color: $secondary;
+}
+
+.home .hero .action-button {
+    background: $secondary;    
+}
+
+.home .hero .action-button:hover {
+    background: #333;    
+}
+
+ul.nav-dropdown {
+    width: 8rem;
+}
+
+.dropdown-item > h4 {
+    color: #333;
+    border-bottom: 1px solid lightgray;
+}
+
+ul.dropdown-subitem-wrapper > li > a {
+}
+
+ul.dropdown-subitem-wrapper > li > a:hover {
+    color: #333 !important;
+    font-weight: bolder !important;
+}
+
+
+.nav-item > a:hover {
+    border-bottom: 2px solid $secondary !important;
+}
+
+.nav-link.router-link-active {
+    color:  $secondary !important;
+}
+
+a.router-link-active::after {
+    border-left: 5px solid $secondary !important;    
+}
+
+.prev, .next > a {
+    color: $secondary !important;    
+}
+
+.page > .content > p {
+    text-align: justify;
+}
+
+.page > .content p > a {
+    color: $secondary;
+}
+
+.header-anchor {
+    color: $secondary;    
+}
